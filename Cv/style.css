@@ -24,27 +24,33 @@ body {
 } */
 * {
   background-color: FFFFFF;
+  color: #202020;
 }
+
 .wrapper {
+  margin-inline: 125px;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Trois colonnes de largeur égale */
+  grid-template-columns: auto auto; /* Trois colonnes de largeur égale */
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px; /* Espacement entre les éléments */
 }
 .box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 1;
   grid-row-end: 1;
 }
 .photoProfil {
-  width: 697px;
-  height: 880px;
-  top: 315.8px;
-  left: 348px;
+  width: 50%;
+
   border-radius: 400px;
 }
 .box2 {
+  display: flex;
+  align-items: center;
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -52,10 +58,40 @@ body {
 }
 .title {
   font-family: Work Sans;
-  font-size: 248px;
+  font-size: 80px;
   font-weight: 600;
-  line-height: 221px;
+
   letter-spacing: 0em;
+  text-align: left;
+}
+h2 {
+  font-family: Work Sans;
+  font-size: 70px;
+  font-weight: 100;
+  line-height: 129px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.sous-titre {
+  font-size: 26px;
+  font-weight: 600;
+}
+.hardSkills {
+  display: flex;
+  list-style-type: none;
+}
+.hardSkills > li {
+  border-radius: 10px;
+  background-color: #c1a8a8;
+  color: #ffffff;
+}
+
+p {
+  padding-block: 20px;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+
   text-align: left;
 }
 .box3 {
@@ -110,4 +146,19 @@ body {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row: 3/7;
+}
+ol {
+  display: flex;
+  justify-content: space-around;
+  margin-inline: 344px;
+}
+li {
+  list-style-type: none;
+  color: ;
+  font-family: Work Sans;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
 }
